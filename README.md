@@ -1,2 +1,2 @@
 # Python-DS
-Practice based on cocepts
+Practice based on concept
