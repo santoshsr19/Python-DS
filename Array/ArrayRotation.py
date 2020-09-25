@@ -6,4 +6,3 @@ for i in range(a):
     arr=list(map(int,input().split()))
     print(*(arr[x:] + arr[:x]))
     t=-1
-    5

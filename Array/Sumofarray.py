@@ -1,12 +1,33 @@
-def sumit(arr,n):
-    a=0
-    if len(arr)!=n:
-        print("Invalid input")
-    else:
-        for j in range(n):
-            a=a+arr[j]
-        return a
+class Solution:
 
-n=int(input())
-arr=list(map(int, input().split()))
-sumit(arr,n)
+	def _sum(self,arr, n):
+   		a=0
+   		for i in range(n):
+   		    a = arr[i]+a
+   		return a
+
+
+
+
+
+
+
+
+#{ 
+#  Driver Code Starts
+#Initial Template for Python 3
+
+
+
+
+# Driver code 
+if __name__ == "__main__": 		
+    tc=int(input())
+    while tc > 0:
+        n=int(input())
+        arr=list(map(int , input().strip().split()))
+        ob = Solution()
+        ans = ob._sum(arr, n)
+        print(ans)
+        tc=tc-1
+# } Driver Code Ends
