@@ -1,0 +1,6 @@
+#input array
+arr = list(map(int, input().split()))
+arr = [int(x) for x in input().strip().split()]
+
+#input methods
+n, k = map(int, input().split())
