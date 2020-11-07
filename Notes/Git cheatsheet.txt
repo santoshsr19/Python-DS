@@ -1,0 +1,7 @@
+
+git clone git@github.com:santoshsr19/Python-DS.git    # To clone an existing reository
+ls                                                    # To check the files in folder
+git status                                            # To check the changes made in repository
+git commit -m 'comments on updates'                   # To commit the changes made in repository
+git push                                              # To push the changes to Server
+git difftool HEAD                                     # To compare the changes made

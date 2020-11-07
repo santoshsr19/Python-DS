@@ -1,4 +1,3 @@
-
 def sort012(arr,n):
     return arr.sort()
 
@@ -22,7 +21,7 @@ if __name__ == '__main__':
 
 #repeated problem in geeks for geeks
 
-def nearlysorted (arr, n, k):
+def nearlysorted(arr, n, k):
     arr.sort()
     for i in arr:
         print(i,end=" ")
