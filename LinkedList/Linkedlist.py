@@ -47,6 +47,16 @@ class LinkedList:
             itr = itr.next
         return count
 
+    def insert_after_value(self, value, data):
+        count = 0
+        itr = self.head
+        while itr:
+            if itr.data == value:
+                node = Node(data, itr.next)
+                itr.next = node
+                break
+            itr = itr.next
+            count += 1
 
 
 
@@ -54,6 +64,16 @@ class LinkedList:
 
 if __name__ == '__main__':
     ll = LinkedList()
-    ll.insert_values(['banana', 'apple', 'mango', 'bracolli'])
+    ll.insert_values(["banana","mango","grapes","orange"])
     ll.print()
-    print("length",ll.get_length())
+    ll.insert_after_value("mango","apple") # insert apple after mango
+    ll.print()
+    ll.remove_by_value("orange") # remove orange from linked list
+    ll.print()
+    ll.remove_by_value("figs")
+    ll.print()
+    ll.remove_by_value("banana")
+    ll.remove_by_value("mango")
+    ll.remove_by_value("apple")
+    ll.remove_by_value("grapes")
+    ll.print()
