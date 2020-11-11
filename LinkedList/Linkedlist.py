@@ -48,6 +48,13 @@ class LinkedList:
         return count
 
     def insert_after_value(self, value, data):
+        if self.head is None:
+            return
+
+        if self.head.data == data:
+            self.head.next = Node(data, self.head.next)
+            return
+
         count = 0
         itr = self.head
         while itr:
@@ -57,6 +64,27 @@ class LinkedList:
                 break
             itr = itr.next
             count += 1
+    def remove_by_value(self, value):
+        if self.head is None:
+            return
+
+        if self.head.data == value:
+            self.head = self.head.next
+            print(value + " Removed")
+            return
+        count = 0
+        itr = self.head
+        while itr.next:
+
+            if itr.next.data == value:
+                itr.next = itr.next.next
+                print(value + " Removed")
+                break
+            itr = itr.next
+            if itr.next is None:
+                print(value + " Not found")
+
+
 
 
 

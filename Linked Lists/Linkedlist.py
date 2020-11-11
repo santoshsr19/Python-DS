@@ -66,7 +66,7 @@ class LinkedList:
                 break
 
             itr = itr.next
-            count+=1
+            count += 1
 
 
 
